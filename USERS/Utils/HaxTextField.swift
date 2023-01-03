@@ -3,7 +3,7 @@ import UIKit
 
 @IBDesignable
 class HATextField: UITextField {
-   
+    
     override func textRect(forBounds bounds: CGRect) -> CGRect {
         return CGRect(x: bounds.origin.x + iconWidth*2, y: bounds.origin.y, width: bounds.width, height: bounds.height)
     }

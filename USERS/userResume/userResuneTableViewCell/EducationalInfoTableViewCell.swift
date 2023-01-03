@@ -8,7 +8,7 @@
 import UIKit
 
 class EducationalInfoTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var eduInfoLabel: UILabel!
     
     @IBOutlet weak var graduatelLabel: UILabel!
@@ -20,11 +20,16 @@ class EducationalInfoTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
-
+    func setEduData(item:RegisterList){
+        self.graduatelLabel.text = item.education ?? ""
+        self.cgpaLabel.text =    "Grade/Percentage: \(item.grade ?? "")"
+        self.passingYear.text = "YearOfPassing: \(item.yearOfPassing ?? "")"
+    }
+    
 }

@@ -16,10 +16,10 @@
 		E917D7C6295BFCAD00A43FA9 /* ProfessionalInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E917D7C5295BFCAD00A43FA9 /* ProfessionalInfoTableViewCell.swift */; };
 		E9809C172958363000A9C45F /* UserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9809C162958363000A9C45F /* UserListTableViewCell.swift */; };
 		E9809C19295849CC00A9C45F /* Strings+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9809C18295849CC00A9C45F /* Strings+Extension.swift */; };
-		E9809C1E2959681600A9C45F /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9809C1D2959681600A9C45F /* UserDetailsViewController.swift */; };
 		E9809C2029596A6A00A9C45F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9809C1F29596A6A00A9C45F /* CoreData.framework */; };
 		E9809C2829599FD000A9C45F /* registerdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9809C2729599FD000A9C45F /* registerdata.swift */; };
 		E989B145295C52ED00F713EF /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E989B144295C52ED00F713EF /* DatabaseHelper.swift */; };
+		E99085522962FAF900794465 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99085512962FAF900794465 /* UIViewControllerExtension.swift */; };
 		E99BA81F29560DC500E9A83D /* HaxTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99BA81E29560DC500E9A83D /* HaxTextField.swift */; };
 		E9B080962954C26A00D772A5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B080952954C26A00D772A5 /* RegisterViewController.swift */; };
 		E9B0809E2954C38400D772A5 /* QualificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B0809D2954C38400D772A5 /* QualificationViewController.swift */; };
@@ -69,10 +69,10 @@
 		E917D7C5295BFCAD00A43FA9 /* ProfessionalInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalInfoTableViewCell.swift; sourceTree = "<group>"; };
 		E9809C162958363000A9C45F /* UserListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewCell.swift; sourceTree = "<group>"; };
 		E9809C18295849CC00A9C45F /* Strings+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Extension.swift"; sourceTree = "<group>"; };
-		E9809C1D2959681600A9C45F /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
 		E9809C1F29596A6A00A9C45F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		E9809C2729599FD000A9C45F /* registerdata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerdata.swift; sourceTree = "<group>"; };
 		E989B144295C52ED00F713EF /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		E99085512962FAF900794465 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		E99BA81E29560DC500E9A83D /* HaxTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaxTextField.swift; sourceTree = "<group>"; };
 		E9B080952954C26A00D772A5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		E9B0809D2954C38400D772A5 /* QualificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QualificationViewController.swift; sourceTree = "<group>"; };
@@ -155,30 +155,6 @@
 			path = userResume;
 			sourceTree = "<group>";
 		};
-		E9809C1A2959677200A9C45F /* UserDetails */ = {
-			isa = PBXGroup;
-			children = (
-				E9809C1C295967D500A9C45F /* UserDetailsCustomCells */,
-				E9809C1B295967BD00A9C45F /* UserDetailsViewController */,
-			);
-			path = UserDetails;
-			sourceTree = "<group>";
-		};
-		E9809C1B295967BD00A9C45F /* UserDetailsViewController */ = {
-			isa = PBXGroup;
-			children = (
-				E9809C1D2959681600A9C45F /* UserDetailsViewController.swift */,
-			);
-			path = UserDetailsViewController;
-			sourceTree = "<group>";
-		};
-		E9809C1C295967D500A9C45F /* UserDetailsCustomCells */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UserDetailsCustomCells;
-			sourceTree = "<group>";
-		};
 		E9809C2629599FB100A9C45F /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +179,16 @@
 				E917D7B3295B71F900A43FA9 /* UserResumeViewController.swift */,
 			);
 			path = userResumeViewController;
+			sourceTree = "<group>";
+		};
+		E994EA532964565400111ACE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E99085512962FAF900794465 /* UIViewControllerExtension.swift */,
+				E9809C18295849CC00A9C45F /* Strings+Extension.swift */,
+				E99BA81E29560DC500E9A83D /* HaxTextField.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		E99BA820295617DD00E9A83D /* ListUser */ = {
@@ -291,19 +277,17 @@
 				E989B144295C52ED00F713EF /* DatabaseHelper.swift */,
 				E9809C2629599FB100A9C45F /* Models */,
 				E917D7B2295B71C900A43FA9 /* userResume */,
-				E9809C1A2959677200A9C45F /* UserDetails */,
 				E99BA820295617DD00E9A83D /* ListUser */,
 				E9B080982954C2C200D772A5 /* Address */,
 				E9B080972954C29F00D772A5 /* Qualifications */,
 				E9B080932954C20C00D772A5 /* Registration */,
+				E994EA532964565400111ACE /* Utils */,
 				E9E7416829548800005565AE /* AppDelegate.swift */,
 				E9E7416A29548800005565AE /* SceneDelegate.swift */,
 				E9E7416E29548800005565AE /* Main.storyboard */,
 				E9E7417429548802005565AE /* Assets.xcassets */,
 				E9E7417629548802005565AE /* LaunchScreen.storyboard */,
 				E9E7417929548802005565AE /* Info.plist */,
-				E99BA81E29560DC500E9A83D /* HaxTextField.swift */,
-				E9809C18295849CC00A9C45F /* Strings+Extension.swift */,
 			);
 			path = USERS;
 			sourceTree = "<group>";
@@ -566,6 +550,7 @@
 			files = (
 				E9809C2829599FD000A9C45F /* registerdata.swift in Sources */,
 				E9809C19295849CC00A9C45F /* Strings+Extension.swift in Sources */,
+				E99085522962FAF900794465 /* UIViewControllerExtension.swift in Sources */,
 				E9B0809E2954C38400D772A5 /* QualificationViewController.swift in Sources */,
 				E917D7C4295BFC8100A43FA9 /* EducationalInfoTableViewCell.swift in Sources */,
 				E917D7C6295BFCAD00A43FA9 /* ProfessionalInfoTableViewCell.swift in Sources */,
@@ -575,7 +560,6 @@
 				E9E7416D29548800005565AE /* ListUserViewController.swift in Sources */,
 				E99BA81F29560DC500E9A83D /* HaxTextField.swift in Sources */,
 				E9E7416929548800005565AE /* AppDelegate.swift in Sources */,
-				E9809C1E2959681600A9C45F /* UserDetailsViewController.swift in Sources */,
 				E917D7B4295B71F900A43FA9 /* UserResumeViewController.swift in Sources */,
 				E9B080A12954C3BD00D772A5 /* AddressViewController.swift in Sources */,
 				E9E7416B29548800005565AE /* SceneDelegate.swift in Sources */,

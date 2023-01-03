@@ -21,9 +21,9 @@ struct RegisterData {
     var password: String = ""
     var confirmPassword: String = ""
     var gender: String = ""
-    var image: Data = Data()
+    var image: Data?
     
-    init(firstName: String, lastName: String, phoneNo: String, email: String, password: String, confirmPassword: String, gender: String,image:Data) {
+    init(firstName: String, lastName: String, phoneNo: String, email: String, password: String, confirmPassword: String, gender: String,image:Data?) {
         self.firstName = firstName
         self.lastName = lastName
         self.phoneNo = phoneNo

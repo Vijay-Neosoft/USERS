@@ -17,7 +17,6 @@ class DatabaseHelper{
     
     func save(_ data: UserModel){
         let context = self.appDelegate.persistentContainer.viewContext
-        // let _register = NSEntityDescription.entity( forEntityName: "RegisterList", in: context) as? RegisterList
         let register = NSEntityDescription.insertNewObject(forEntityName: "RegisterList", into: context) as! RegisterList
         let userRegisterData = data.register
         register.image = userRegisterData?.image
@@ -46,16 +45,16 @@ class DatabaseHelper{
         do {
             try context.save()
         } catch let error {
-            print("save error", error.localizedDescription)
+            // print("save error", error.localizedDescription)
         }
     }
     func fetch() -> [RegisterList] {
         let context = self.appDelegate.persistentContainer.viewContext
         do {
             userData = try context.fetch(RegisterList.fetchRequest())
-            print("fetched userData ",userData.debugDescription)
+            //print("fetched userData ",userData.debugDescription)
         } catch {
-            print("couldnt fetch")
+           // print("couldnt fetch")
         }
         return userData
     }

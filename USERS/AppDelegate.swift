@@ -7,18 +7,19 @@
 
 import UIKit
 import CoreData
+import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+    static let appWindow = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         //let path = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)
        //print("\(path)")
         // Override point for customization after application launch.
         let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
              print(urls[urls.count-1] as URL)
+        
+        IQKeyboardManager.shared.enable = true
 
         return true
     }
@@ -81,6 +82,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
+    func setRootViewController() {
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "ListUserViewController") as! ListUserViewController
+            let navigationController = UINavigationController(rootViewController: nextViewController)
+            //let appdelegate = UIApplication.shared.delegate as! AppDelegate
+            AppDelegate.appWindow?.rootViewController = navigationController
+            UIApplication.shared.windows.first?.makeKeyAndVisible()
+        }
 }
 

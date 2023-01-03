@@ -12,7 +12,7 @@
         <attribute name="firstName" optional="YES" attributeType="String"/>
         <attribute name="gender" optional="YES" attributeType="String"/>
         <attribute name="grade" optional="YES" attributeType="String"/>
-        <attribute name="image" optional="YES" attributeType="Binary"/>
+        <attribute name="image" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
         <attribute name="landmark" optional="YES" attributeType="String"/>
         <attribute name="lastName" optional="YES" attributeType="String"/>
         <attribute name="password" optional="YES" attributeType="String"/>
